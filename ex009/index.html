@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone-test.ico" type="image/x-icon">
+    <title>Links e Âncora</title>
+</head>
+<body>
+    <h1>Usando Links</h1>
+    <h2>Externos</h2>
+    <p>
+        Para acessar outros sites através de um link, utilizamos a tag <code>&lt;a href= "link-externo.com" target="_blank" rel="external"&gt;</code> <br>
+        Ex: <br>
+        Você pode acessar o <a href="https://www.youtube.com/" target="_blank" rel="external">youtube</a>, o <a href="https://www.instagram.com" target="_blank" rel="external">instagram</a> e qualquer outro site.
+    </p>
+    <h2>Internos</h2>
+    <p>
+        Para acessar links internos, como arquivos html, utilizamos a tag <code>&lt; a href="caminho ou nome do arquivo" rel="next ou prev" &gt;</code> <br> <!-- next -> próxima página
+                        prev -> página anterior -->
+        Ex: <br>
+        <a href="pag002.html" rel="next">Área de Vídeos</a> <br>
+        <a href="noticias/pag003.html" rel="next">Área de notícias</a> <br>
+        Este site é patrocinado pelo <a href="https://www.google.com" target="_blank" rel="nofollow">&copy; Google</a>
+    </p>
+    <h2>Downloads</h2>
+    <p>
+        Para criar links de download é necessário a utilização da tag <strong><code>&lt; a href="#" download="nome-do-arquivo" type="depende do formato do arquivo (site de apoio: iana.org/assignments/media-types/) &gt;</code></strong> <br>
+        Ex: <br>
+        <ul type="disk">
+            <li><a href="certificado/discover-conectar-certificate.pdf" download="discover-conectar-certificate.pdf" type="application/pdf">Download .PDF</a></li>
+            <li><a href="certificado/discover-conectar-certificate.rar" download="discover-conectar-certificate.rar" type="application/vnd.rar">Download .RAR</a></li>
+        </ul> 
+    </p>
+</body>
+</html>

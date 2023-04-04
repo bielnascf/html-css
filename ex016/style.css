@@ -1,0 +1,54 @@
+@charset "UTF-8";
+
+
+body {
+    background-image: linear-gradient(to right, rgb(58, 252, 58), rgb(161, 247, 165));
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+main {
+    background-color: white;
+    width: 900px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 2px 1px 0px rgb(1, 94, 1);
+}
+
+h1#principal {
+    text-align: center;
+    color:rgb(1, 94, 1);
+    font-size: 3em;
+    text-shadow: 1px 1px 0px black;
+    background-color: rgb(48, 241, 48);
+    font-style: italic;
+    border-radius: 10px;
+}
+
+h1#subtitulo {
+    color: rgb(18, 175, 18);
+    font-style: italic;
+}
+
+h2.subprincipal {
+    color: rgb(79, 155, 79);
+    font-style: italic;
+} 
+
+
+h3.basico {
+    color:  rgb(1, 255, 14);
+}
+
+h3.intermediario {
+    color: rgb(204, 204, 2);
+}
+
+h3.avancado {
+    color: red;
+}
+p {
+    text-align: justify;
+    font-weight: bold;
+}

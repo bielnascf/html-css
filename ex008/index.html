@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icone-test.ico" type="image/x-icon">
+    <title>Trabalhando com listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <p>
+        Para listarmos itens de forma ordenada, utilizamos a tag &lt; ol &gt; para criar o bloco de lista e a tag &lt; li &gt; para listá-los e ordená-los. <br>
+        Ex: <br>
+        <ol type=""> <!-- 1 -> Listagem númerica
+                          A -> Listagem alfabética maiúscula
+                          a -> Listagem alfabética minúscula
+                          I -> Listagem número romano maiúsculo
+                          i -> Listagem número romano minúsculo -->
+            <li>Acordar</li>
+            <li>Escovar os dentes</li>
+            <li>Tomar Café</li>
+            <li>Se arrumar</li>
+            <li>Ir para a escola</li>
+        </ol>
+    </p>
+    <h2>Listas Não-Ordenadas</h2>
+    <p>
+        Para listarmos itens de uma forma não ordenada, utilizamos a tag &lt; ul &gt; para criar o bloco de lista e a tag &lt; li &gt; para listá-los. <br>
+        Ex: <br>
+        <ul type=""> <!-- disc -> Listagem com um disco preenchido
+                          circle -> Listagem com um disco não preenchido
+                          square -> Listagem com um quadrado preenchido -->
+            <li>Arroz</li>
+            <li>Feijão</li>
+            <li>Tomate</li>
+            <li>Cebola</li>
+            <li>Tempero</li>
+        </ul>
+    </p>
+    <h2>Listas Mistas ou Sub-Listas</h2>
+    <p>
+        Ex: Criar listas dentro de listas com as tags &lt; ol &gt;/&lt; ul &gt; e &lt; li &gt;. <br>
+        <ol type="A">
+            <li>Jogos de FPS</li>
+            <ul type="square">
+                <li>Counter Strike GO</li>
+                <li>Call of Duty</li>
+                <li>Battlefield</li>
+            </ul>
+            <li>Jogos de Esporte</li>
+            <ul type="square">
+                <li>FIFA</li>
+                <li>NBA 2K</li>
+                <li>Formula 1</li>
+            </ul>
+            <li>Jogos de Luta</li>
+            <ul type="square">
+                <li>UFC Undisputed</li>
+                <li>Tekken</li>
+                <li>Street Fighter</li>
+            </ul>
+        </ol>
+    </p>
+    <h2>Listas de Definição</h2>
+    <p>
+        Para listar itens com suas definições, como em um dicionário, é utilizado a tag &lt; dl &gt; para criar o bloco lista de definição, a tag &lt; dt &gt; para definir o termo que será descrito e a tag &lt; dd &gt; para a sua descrição. <br>
+        Ex: <br>
+        <dl>
+            <dt>HTML</dt>
+            <dd>É uma <strong>linguagem de marcação</strong> a fim de personalizar e adicionar <em>conteúdo</em> ao site.</dd>
+            <dt>CSS</dt>
+            <dd>É uma <strong>linguagem de marcação</strong> a fim de personalizar e adicionar um <em>design</em> ao site.</dd>
+            <dt>JavaScript</dt>
+            <dd>É uma <strong>linguagem de programação</strong> a fim de personalizar e adicionar <em>interatividade</em> ao site.</dd>
+        </dl>
+    </p>
+</body>
+</html>

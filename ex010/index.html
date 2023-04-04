@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>
+        Para reproduzir mídias dinâmicas de acordo com o tamanho de tela do usuário, é necessário a utilização da tag &lt; picture &gt; e a tag &lt; source:media:type &gt; para adaptá-las e ter uma melhor visualização no site. Ex: <br>
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto dinâmica">
+    </picture>
+    <h1>Reproduzindo Áudios</h1>
+    <p>
+        Para reproduzir áudios no site, é necessário a utilização da tag &lt; audio &gt; e as demais tags &lt; source &gt; para adicioná-los. Ex: <br>
+    </p>
+    <audio preload="metadata" controls>
+        <source src="midias/hino-do-botafogo.mp3" type="audio/mpeg"> <!-- Outros tipos de extensões de áudio além do MP3 -> OGG/WAV -->
+        <p>
+            O seu navegador não permitiu reproduzir esse áudio. <a href="midias/hino-do-botafogo.mp3" download="hino-do-botafogo.mp3">Clique aqui</a> para baixá-lo.
+        </p>
+    </audio>
+    <h1>Reproduzindo Vídeos</h1>
+    <h2>Hospedando Videos Localmente (Interno)</h2>
+    <p>
+        Para reproduzir vídeos no site hospedando-os localmente, é necessário a utilização da tag &lt; video &gt; e as demais tags &lt; source &gt; para adicioná-los. Ex: <br> <!-- Consome muita memória de banda e é o jeito mais caro para o seu cliente. -->
+    </p>
+    <video width="500" height="315" controls poster="imagens/escudo-botafogo.png">
+        <source src="midias/torcida-botafogo.mp4.mp4" type="video/mp4">
+    </video>
+    <h2>Hospendando Vídeos Externamente (Externo)</h2>
+    <h3>Videos do Youtube</h3>
+    <p>
+        Ao entrar em um vídeo do yotube, na aba de compartilhar, aparecerá a opção "INCORPORAR". Copie o código HTML5 ali presente e cole no seu editor. Ex: <br> <!-- Essa maneira não consome memória de banda, o que permite um site mais leve e fluido e menos custoso ao seu cliente. Colocar vídeos do youtube precisam de autorização ou vídeos que não contenham licença de copyright. Possui muita vantagem em relação ao método de busca do google e é recomendável para sites que não possuem um conteúdo exclusivo. Para conteúdos exclusivos, é recomendável plataformas que privam os vídeos, como por exemplo o VIMEO.-->
+    </p>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/OzUnqQk4eOg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>
