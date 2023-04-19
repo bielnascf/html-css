@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupando Colunas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        th,td {
+            border: 1px solid #000000;
+            padding: 7px;
+        }
+
+        .amarelo {
+            background-color: #ffff00;
+        }
+
+        .cinza {
+            background-color: #808080;
+        }
+
+        .verde {
+            background-color: #008000;
+        }
+
+        .azul {
+            background-color: #0000ff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Agrupando colunas com colgroup</h1>
+
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="cinza">
+            <col class="verde">
+            <col class="azul">
+        </colgroup>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Gabriel</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Matthew</td>
+                <td>M</td>
+                <td>21</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Mateus</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Estatístico</td>
+            </tr>
+            <tr>
+                <td>Maria Fernanda</td>
+                <td>F</td>
+                <td>20</td>
+                <td>Auxiliar</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
