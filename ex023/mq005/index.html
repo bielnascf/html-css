@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-<body>
+<body onresize="changeWidth()">
     <header>
         <h1>Meu Site</h1>
         <span class="material-icons" id="burguer" onclick="openMenu()">menu</span>
@@ -20,6 +20,7 @@
                 <li><a href="#">Opção 2</a></li>
                 <li><a href="#">Opção 3</a></li>
                 <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
             </ul>
         </menu>
     </header>
@@ -40,6 +41,14 @@
     </main>
 
     <script>
+        function changeWidth() {
+            if (window.innerWidth >= 768) {
+                menu.style.display = 'block';
+            } else {
+                menu.style.display = 'none';
+            }
+        }
+        
         function openMenu() {
             if (menu.style.display == 'block') {
                 menu.style.display = 'none';
