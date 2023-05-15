@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+body {
+    background-color: blue;
+}
+
+main {
+    width: 50vw;
+    height: 60vh;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.521);
+}
+
+main h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+main p {
+    padding: 10px;
+    font-size: 0.9rem;
+    text-align: justify;
+}
+
+.container-image {
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.container-infos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(0, 47, 255);
+    margin: 0 10px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.container-infos #iemail {
+    padding: 5px;
+}
+
+.container-infos #ipassword {
+    padding: 5px;
+}
+
+.container-submit {
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+
+.container-submit input {
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.514);
+    border-radius: 5px;   
+}
+
+.container-submit input:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
+
+.container-recovery {
+    margin: 5px 10px;
+    border-radius: 5px;
+}
+
+.container-recovery input {
+    padding: 10px;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0.514);
+    border-radius: 5px;   
+}
+
+.container-recovery input:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
